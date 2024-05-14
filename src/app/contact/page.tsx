@@ -11,6 +11,11 @@ import linkedin from './../../../public/linkedin.png'
 import gfg from './../../../public//images/gfg.png'
 import LeetCode from './../../../public//images/LeetCode.png'
 
+const envvalue={
+  serviceId: process.env.NEXT_PUBLIC_SERVICEI,
+  templateId: process.env.NEXT_PUBLIC_TEMPLATE,
+  publicId: process.env.NEXT_PUBLIC_PUBLIC_ID
+}
 
 const Contactpage = () => {
   const text='Say Hello'
@@ -19,7 +24,7 @@ const Contactpage = () => {
   const [Error, setError]=useState(false)
 
 
-  console.log("NEXT_PUBLIC_SERVICEID", process.env.NEXT_PUBLIC_SERVICEI)
+  console.log("NEXT_PUBLIC_SERVICEID", envvalue.publicId)
   const form = useRef();
 
   const routes=useRouter()
@@ -30,15 +35,11 @@ const Contactpage = () => {
     setSuccess(false);
     setError(false);
 
-    const serviceId = "service_t94j2tf";
-    const templateId = "template_9qydt2v";
-    const publicId = "occPMpd0Hz13mBXNY";
-
     console.log("1")
 
     emailjs
-      .sendForm(serviceId, templateId, form.current, {
-        publicKey: publicId,
+      .sendForm(envvalue.serviceId, envvalue.templateId, form.current, {
+        publicKey: envvalue.publicId,
       })
       
       .then(
