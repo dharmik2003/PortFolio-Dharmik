@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:"export",
+    basePath:"/dharmik2003/PortFolio-Dharmik",
+    // output: "export",
+    
 };
 
 export default nextConfig;
