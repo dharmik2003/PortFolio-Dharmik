@@ -34,10 +34,13 @@ const Portfoliopage = () => {
                     <p className='w-80 md:w-96  lg:w-[600px] xl:w-[600] text-sm sm:text-md'>{project.description}</p>
                     <div className='flex gap-5 flex-wrap'>
                       {
-                        project.tech.map((lan => (
-                          <div className='rounded p-1 sm:p-2 text-sm cursor-default bg-black text-white hover:bg-white hover:text-black w-fit'>{lan}</div>
-                        )))
+                        project.tech.map((lan, index) => (
+                          <div key={index} className='rounded p-1 sm:p-2 text-sm cursor-default bg-black text-white hover:bg-white hover:text-black w-fit'>
+                            {lan}
+                          </div>
+                        ))
                       }
+
                     </div>
                     <Link className='flex sm:justify-end justify-start ' href={project.code}><button className='p-2 text-sm  md:p-4 md:text-md lg:py-2 lg:px-5 ml-0 lg:text-lg bg-white text-black font-semibold m-2 rounded '>See Code</button></Link>
                   </div>

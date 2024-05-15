@@ -49,13 +49,14 @@ const Homepage = () => {
             {/* <h1 className="text-4xl font-bold md:text-5xl text-start">I am Full Stack Developer</h1> */}
 
             <motion.span variants={container(1)} initial="hidden" animate="visible" className='lg:pb-6 bg-gradient-to-t mt-4 from-blue-50 to-red-100 via-slate-500 bg-clip-text text-2xl md:text-3xl lg:text-4xl tracking-tight text-transparent' style={{ color: 'black' }}>
-              I'm a <ReactTyped
+              I&apos;m a <ReactTyped
                 strings={['Flutter Developer', 'Full Stack Developer', 'Blockchain Developer', 'Quick Learner']}
                 typeSpeed={150}
                 backSpeed={100}
                 loop
               />
             </motion.span>
+
 
 
 
