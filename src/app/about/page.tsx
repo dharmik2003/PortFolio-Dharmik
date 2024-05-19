@@ -2,7 +2,6 @@
 import React, { useRef } from 'react'
 import { motion, useInView, useScroll } from 'framer-motion'
 import Image from 'next/image'
-import Brain from '../Components/brain'
 import Link from 'next/link'
 import Mind from './../../../public/mind-icon-2.png'
 
@@ -140,7 +139,6 @@ const Aboutpage = () => {
           </div>
           {/* svg */}
           <div className='hidden lg:block w-1/3 xl:[45%] sticky top-0 z-30'>
-          {/* <Brain scrollYProgress={scrollYProgress}/> */}
           <Image src={Mind} alt="hero" fill className="rounded-xl object-contain" />
 
 

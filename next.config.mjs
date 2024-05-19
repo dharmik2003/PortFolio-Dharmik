@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath:"/dharmik2003/PortFolio-Dharmik",
+    // basePath:"/dharmik2003/PortFolio-Dharmik",
     // output: "export",
     
 };

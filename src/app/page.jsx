@@ -27,15 +27,9 @@ const Homepage = () => {
       {/* image */}
 
 
-        <div className="h-[340px] sm:h-[400px] sm:w-[75%] md:w-[60%] w-full lg:w-[48%] xl:w-[50%] xl:h-[450px] flex justify-center relative rounded">
-          <Image src={profileimage} alt="hero" fill className="rounded-xl w-[95%] h-[280px] sm:h-[400px] sm:w-[70%] lg:w-[48%]"/>
+      <div className="h-[340px] sm:h-[400px] sm:w-[75%] md:w-[60%] w-full lg:w-[48%] xl:w-[38%] xl:h-[450px] flex justify-center relative rounded">
+          <Image src={profileimage} alt="hero" fill className="rounded-xl w-[95%] h-[280px] sm:h-[400px] sm:w-[70%] lg:w-[38%]"/>
       </div>
-      {/* <div className="h-[300px] w-full lg:h-[70%] lg:w-[37%] flex justify-center relative rounded">
-          <Image src='/dharmik111.jpeg' alt="hero" fill className="rounded-xl w-[95%] h-[280px] lg:w-[37%] lg:h-[70%] "/>
-      </div> */}
-      {/* <div className="h-[90%] lg:h-[70%] lg:w-[37%] flex justify-center relative rounded">
-          <Image src='/dharmik111.jpeg' alt="hero" fill className="rounded-xl w-[37%] h-[70%] "/>
-      </div> */}
       {/* content */}
       <div className="w-[95%] justify-center lg:h-full lg:w-1/2 flex flex-col gap-8 lg:items-start lg:justify-center">
           <div className="flex justify-start gap-2 flex-col lg:gap-5">

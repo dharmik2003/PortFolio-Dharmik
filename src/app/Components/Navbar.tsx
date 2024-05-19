@@ -3,9 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Navlinks from './Navlinks'
-import { motion, stagger } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { IoIosLaptop } from "react-icons/io"; 
-import { FaComputer } from "react-icons/fa6";
 import github from './../../../public/github.png'
 import linkedin from './../../../public/linkedin.png'
 import gfg from './../../../public//images/gfg.png'
