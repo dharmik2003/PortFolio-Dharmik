@@ -1,8 +1,11 @@
 {
   "name": "lama-dev-portfolio-starter",
+  "homepage": "https://dharmik2003.github.io/PortFolio-Dharmik",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,6 +17,7 @@
     "dotenv": "^16.4.5",
     "emailjs": "^4.0.3",
     "framer-motion": "^11.1.9",
+    "gh-pages": "^6.1.1",
     "next": "^14.2.3",
     "react": "18",
     "react-dom": "18",

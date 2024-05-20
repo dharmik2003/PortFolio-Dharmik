@@ -9,6 +9,7 @@ import github from './../../../public/github.png'
 import linkedin from './../../../public/linkedin.png'
 import gfg from './../../../public//images/gfg.png'
 import LeetCode from './../../../public//images/LeetCode.png'
+import Email from './../../../public/email_PNG11.png'
 
 
 export interface Links {
@@ -19,11 +20,15 @@ export interface Links {
 const Navbar = () => {
 
 
+    const email = 'dharmikdk99@gmail.com';
+
+
+
     const links:Links[] = [
             {url: "/", title: "Home"},
             {url: "/about", title: "About"},
-            { url: "/portfolio", title: "Portfolio"},
-            {url: "/contact", title: "Contact"}
+            {url: "/portfolio", title: "Portfolio"},
+            {url: "/contact", title: "Contact"},
     ]
 
     const topVariants={
