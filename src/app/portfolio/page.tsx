@@ -29,7 +29,7 @@ const Portfoliopage = () => {
                   <div className='flex flex-col gap-5 text-white'>
                     <h1 className='text-xl font-bold md:text-4xl lg:text-5xl xl:text-5xl'>{project.title}</h1>
                     <div className='relative h-56 w-64 md:w-96 md:h-64 lg:w-[500px] mt-5 lg:h-[300px] xl:w-[600] xl:h-[280px] '  >
-                      <Image src={project.image1} alt='image1' width={350} height={280}  className='rounded-md text-start'/>
+                      <Image src={project.image1} alt='image1' width={350} height={280} className={`${project.type == "app" ? "w-[150px] h-[220px] ":""}rounded-md text-start`}/>
                     </div>
                     <p className='w-80 md:w-96  lg:w-[600px] xl:w-[600] text-sm sm:text-md'>{project.description}</p>
                     <div className='flex gap-5 flex-wrap'>

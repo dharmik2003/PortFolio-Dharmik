@@ -102,6 +102,8 @@ const Navbar = () => {
         </div>
         {/* social */}
         <div className='hidden md:flex gap-4 w-1/3 justify-center'>
+          
+              <Link href="mailto:dharmikdk99@gmail.com" ><Image src={Email} alt="github" width={35} height={24}/></Link>
               <Link href={"https://github.com/dharmik2003"} target="_blank"><Image src={github} alt="github" width={24} height={24}/></Link>
               <Link href={"https://www.linkedin.com/in/dharmik2003/"} target="_blank"><Image src={linkedin} alt="github" width={24} height={24}/></Link>
               <Link href={"https://www.geeksforgeeks.org/user/dharmik99/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"} target="_blank"><Image src={gfg} alt="github" width={44} height={34}/></Link>

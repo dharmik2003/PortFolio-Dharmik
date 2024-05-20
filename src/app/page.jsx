@@ -23,6 +23,7 @@ const Homepage = () => {
   return (
 
     <motion.div className="min-h-full pt-8" initial={{ y: "-200vh" }} animate={{ y:"0%"}} transition={{duration:1}}>
+      
     <div className="flex flex-col gap-8 xl:gap-28 justify-center items-center lg:mt-16  lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-18 xl:px-48 ">
       {/* image */}
 
